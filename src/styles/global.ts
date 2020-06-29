@@ -1,5 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
+import imageBackground from "../assets/github-bg.svg";
+
 export default createGlobalStyle`
   * {
     margin: 0;
@@ -8,13 +10,12 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
   body {
-    background-color: '#F0F0F5';
+    background: #F0F0F5 url(${imageBackground}) no-repeat 70% top;
     -webkit-font-smoothing: antialiased;
   }
   body, input, button {
     font: 16px Roboto, sans-serif;
   }
-
   #root {
     max-width: 960px;
     margin: 0 auto;
